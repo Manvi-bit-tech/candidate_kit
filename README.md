@@ -1,4 +1,65 @@
 # Candidate kit
+# Employee Attendance & Analytics API
+
+A REST API built with **Python, FastAPI, and MongoDB** for employee attendance management, punch-in/punch-out operations, attendance regularization with audit history, and attendance analytics.
+
+## Features
+
+- Employee management and paginated API responses.
+- Attendance punch-in and punch-out with business-rule validation.
+- Manual attendance corrections with an audit trail.
+- Monthly attendance summaries, department analytics, late-arrival leaderboard, and department trends.
+- MongoDB aggregation pipelines and query execution-plan inspection.
+- Health-check endpoint and database indexes.
+
+## Tech Stack
+
+- Python 3.11+
+- FastAPI
+- MongoDB 6.0+
+- PyMongo
+
+## Setup and Run
+
+1. Create and activate a virtual environment:
+
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Start MongoDB locally or configure a MongoDB Atlas connection. Set the required `MONGO_URI` and `MONGO_DB` environment variables according to the application configuration.
+
+4. Start the API:
+
+   ```bash
+   uvicorn app.main:app --port 8000
+   ```
+
+5. Open `http://127.0.0.1:8000/docs` to explore the API using Swagger UI.
+
+   Check `http://127.0.0.1:8000/health` to verify application and database connectivity.
+
+## Code Review and Design Decisions
+
+See [REVIEW.md](REVIEW.md) for the code review and [DECISIONS.md](DECISIONS.md) for implementation trade-offs and design decisions.
+
+## Notes
+
+MongoDB must be running and correctly configured before starting the application. No secrets or local environment files should be committed to the repository.
+
+
+
+
+
+
+
 
 Read in this order:
 
