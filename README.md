@@ -58,7 +58,7 @@ MongoDB must be running and correctly configured before starting the application
 
 
 
-
+<!-- 
 
 
 Read in this order:
@@ -84,4 +84,4 @@ MongoDB **6.0 or newer** is required (the grader uses 7.0). MongoDB Atlas free t
 
 ## Submit
 A public Git repository with `app/main.py`, `requirements.txt`, `REVIEW.md`, `DECISIONS.md` and a short `README.md`.
-No `.env`, no secrets, no Dockerfile.
+No `.env`, no secrets, no Dockerfile. -->
